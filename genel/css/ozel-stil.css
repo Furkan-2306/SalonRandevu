@@ -1,0 +1,106 @@
+/* Genel Stil Ayarları */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #fafafa !important;
+}
+
+
+footer {
+    margin-top: auto !important;
+}
+
+/* MODERN RENK PALETİ  */
+:root {
+    --luks-koyu: #1E2022;     
+    --luks-altin: #c89f65;    
+    --luks-altin-hover: #b38a52;
+}
+
+
+.bg-primary { background-color: var(--luks-koyu) !important; }
+.text-primary { color: var(--luks-altin) !important; }
+
+
+.btn-primary {
+    background-color: var(--luks-altin);
+    border-color: var(--luks-altin);
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(200, 159, 101, 0.3);
+}
+.btn-primary:hover {
+    background-color: var(--luks-altin-hover);
+    border-color: var(--luks-altin-hover);
+    color: #fff;
+}
+
+
+.btn-outline-primary {
+    color: var(--luks-koyu);
+    border-color: var(--luks-koyu);
+}
+.btn-outline-primary:hover {
+    background-color: var(--luks-koyu);
+    color: #fff;
+    border-color: var(--luks-koyu);
+}
+
+/*Cinsiyet Seçimi İçin*/
+.btn-check:checked + .btn-outline-primary {
+    background-color: var(--luks-koyu);
+    color: #fff;
+    border-color: var(--luks-koyu);
+}
+
+
+/* Kadın butonu  */
+#kadin:checked + label,
+#kayitKadin:checked + label {
+    background-color: #d81b60 !important;
+    border-color: #d81b60 !important;
+    color: #ffffff !important;
+}
+
+
+/* Erkek butonu  */
+#erkek:checked + label,
+#kayitErkek:checked + label {
+    background-color: #1e88e5 !important;
+    border-color: #1e88e5 !important;
+    color: #ffffff !important;
+}
+
+.nav-pills .nav-link.active {
+    background-color: var(--luks-koyu) !important;
+    color: var(--luks-altin) !important;
+}
+
+.nav-pills .nav-link {
+    color: var(--luks-koyu);
+}
+
+
+a {
+    color: var(--luks-altin);
+}
+a:hover {
+    color: var(--luks-altin-hover);
+}
+
+.password-toggle {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 10;
+    color: #6c757d;
+    font-size: 1.2rem;
+}
+
+.form-floating .password-toggle {
+    top: 30px; 
+}
+
